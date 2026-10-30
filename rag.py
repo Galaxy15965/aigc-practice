@@ -47,3 +47,27 @@ while True:
         ],
     )
     print("\n" + r.choices[0].message.content)
+
+
+    def expand_query(q):
+        r = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "system",
+                 "content": "把用户的问题改写成3个不同说法,覆盖同义词和不同角度。只输出3行,不要编号,不要解释。"},
+                {"role": "user", "content": q},
+            ],
+            temperature=0.7,
+        )
+        lines = [l.strip() for l in r.choices[0].message.content.split("\n") if l.strip()]
+        return [q] + lines[:3]
+
+
+    def retrieve(q, k=5):
+        best = {}
+        for v in expand_query(q):
+            s = bm25.get_scores(list(jieba.cut(v)))
+            for i, sc in enumerate(s):
+                if sc > best.get(i, 0):
+                    best[i] = sc
+        return sorted(best, key=lambda i: best[i], reverse=True)[:k]

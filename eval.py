@@ -27,6 +27,28 @@ SYSTEM = """你是文档问答助手,严格遵守三条规则:
 def pages_of(chunk):
     return [int(x) for x in re.findall(r"=== 第(\d+)页 ===", chunk)]
 
+def expand_query(q):
+    r = client.chat.completions.create(
+        model="deepseek-chat",
+        messages=[
+            {"role": "system", "content": "把用户的问题改写成3个不同说法,覆盖同义词和不同角度。只输出3行,不要编号,不要解释。"},
+            {"role": "user", "content": q},
+        ],
+        temperature=0.7,
+    )
+    lines = [l.strip() for l in r.choices[0].message.content.split("\n") if l.strip()]
+    return [q] + lines[:3]
+
+
+def retrieve(q, k=5):
+    best = {}
+    for v in expand_query(q):
+        s = bm25.get_scores(list(jieba.cut(v)))
+        for i, sc in enumerate(s):
+            if sc > best.get(i, 0):
+                best[i] = sc
+    return sorted(best, key=lambda i: best[i], reverse=True)[:k]
+
 questions = json.load(open("questions.json", encoding="utf-8"))
 
 hit = 0
@@ -37,8 +59,7 @@ for item in questions:
     q = item["q"]
     expect = item.get("page")
 
-    scores = bm25.get_scores(list(jieba.cut(q)))
-    top5 = sorted(range(len(chunks)), key=lambda i: scores[i], reverse=True)[:5]
+    top5 = retrieve(q)
     pages = [pages_of(chunks[i]) for i in top5]
     covered = sorted({p for ps in pages for p in ps})
     context = "\n\n".join(chunks[i] for i in top5)
@@ -74,3 +95,27 @@ with open("results.csv", "w", newline="", encoding="utf-8-sig") as f:
     w = csv.writer(f)
     w.writerow(["问题", "期望页", "召回页", "回答"])
     w.writerows(rows)
+
+
+    def expand_query(q):
+        r = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "system",
+                 "content": "把用户的问题改写成3个不同说法,覆盖同义词和不同角度。只输出3行,不要编号,不要解释。"},
+                {"role": "user", "content": q},
+            ],
+            temperature=0.7,
+        )
+        lines = [l.strip() for l in r.choices[0].message.content.split("\n") if l.strip()]
+        return [q] + lines[:3]
+
+
+    def retrieve(q, k=5):
+        best = {}
+        for v in expand_query(q):
+            s = bm25.get_scores(list(jieba.cut(v)))
+            for i, sc in enumerate(s):
+                if sc > best.get(i, 0):
+                    best[i] = sc
+        return sorted(best, key=lambda i: best[i], reverse=True)[:k]
