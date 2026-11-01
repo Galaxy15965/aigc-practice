@@ -15,7 +15,8 @@ GitHub: [Galaxy15965/aigc-practice](https://github.com/Galaxy15965/aigc-practice
 - ✅ Streamlit Agent 界面与工具轨迹回放
 - ✅ 18 个离线单元测试，覆盖工具调用、评测抽样、拒答判定与引用校验
 - ✅ DeepSeek 真实 API 全量评测：35 题通过，94 次工具调用，可答题引用 30/30，无关题拒答 5/5
-- ⏳ 语义忠实度人工复核、Memory、浏览器验证和多 Agent 协同尚未完成
+- ✅ 8 题定向人工忠实度抽检：8/8 主要结论可在引用页找到依据，2 道拒答题未编造事实
+- ⏳ 35 题逐句人工复核、Memory、浏览器验证和多 Agent 协同尚未完成
 
 ## 功能
 
@@ -73,6 +74,8 @@ flowchart LR
 | Token 消耗 | 167,265 |
 
 报告保存在 `reports/agent_eval_all.json` 和 `reports/agent_eval_all.csv`。自动口径验证的是：是否访问到期望页、回答是否引用期望页、引用页是否确实被工具访问、无关题是否拒答；不等同于逐句语义忠实度人工审核。
+
+另对 8 道题做了定向人工抽检（6 道可答、2 道应拒答），逐条对照 PDF 引用页：8/8 的主要结论可在引用页找到依据，2 道拒答题均未编造事实。明细见 `reports/agent_faithfulness_sample.json`。这是定向抽检，不等同于 35 题逐句人工审核。
 
 复跑完整 35 题：
 

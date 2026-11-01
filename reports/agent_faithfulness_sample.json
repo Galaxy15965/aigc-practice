@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-11-01",
+  "source_report": "reports/agent_eval_all.json",
+  "method": "定向人工抽检：抽取 6 道可答题与 2 道应拒答题，逐条对照 PDF 引用页原文检查主要结论。",
+  "sample_positions": [1, 6, 13, 23, 27, 30, 31, 35],
+  "summary": {
+    "sample_size": 8,
+    "answerable_samples": 6,
+    "unanswerable_samples": 2,
+    "supported": 8,
+    "partially_supported": 0,
+    "unsupported": 0,
+    "main_claim_supported_count": 8,
+    "fabricated_facts_in_refusals": 0
+  },
+  "samples": [
+    {
+      "position": 1,
+      "question": "调查报告的写作一般要经历哪三个阶段?",
+      "expected_page": 11,
+      "cited_pages": [11],
+      "verdict": "supported",
+      "rationale": "第 11 页原文明确写明准备、起草、修改三个阶段，并说明写作准备阶段是打基础的阶段。"
+    },
+    {
+      "position": 6,
+      "question": "概述式前言是怎么写的?",
+      "expected_page": 21,
+      "cited_pages": [20, 21],
+      "verdict": "supported",
+      "rationale": "第 21 页给出概述式、结论式和问答式的原文定义；第 20 页支持前言、主体、结尾的结构说明。回答还准确说明资料没有提供概述式的逐句模板。"
+    },
+    {
+      "position": 13,
+      "question": "结尾常见的写法有哪几种?",
+      "expected_page": 26,
+      "cited_pages": [26],
+      "verdict": "supported",
+      "rationale": "第 26 页列出总结式、呼应式、展望式、说明式，并只展开前两种。回答没有补造后两种的具体含义。"
+    },
+    {
+      "position": 23,
+      "question": "经验调查报告和先进典型调查报告有什么区别?",
+      "expected_page": 35,
+      "cited_pages": [33, 34, 35, 36],
+      "verdict": "supported",
+      "rationale": "第 33—36 页分别说明先进典型调查报告的对象、用途、写作难点以及经验调查报告的对象、内容重点和案例，支撑回答的主要差异。"
+    },
+    {
+      "position": 27,
+      "question": "为什么要选择能印证主题的统计数字?",
+      "expected_page": 42,
+      "cited_pages": [40, 41, 42],
+      "verdict": "supported",
+      "rationale": "第 42 页原文直接说明数字能帮助知范围、知变化、知程度，使论据充分、论点成立；第 40—41 页提供典型事例与选材语境。"
+    },
+    {
+      "position": 30,
+      "question": "《实践论》里“去粗取精、去伪存真”是用来说明什么的?",
+      "expected_page": 48,
+      "cited_pages": [48],
+      "verdict": "supported",
+      "rationale": "第 48 页原文将这句话与感性认识跃迁到理性认识、对感觉材料进行改造制作以及调查报告的材料处理联系起来。"
+    },
+    {
+      "position": 31,
+      "question": "Python 的 GIL 是什么?",
+      "expected_page": null,
+      "cited_pages": [],
+      "verdict": "supported",
+      "claim_type": "refusal",
+      "fabricated_facts": false,
+      "rationale": "回答明确拒答，只描述检索到的课程资料主题并列出已访问页，没有编造 GIL 的定义或原理。"
+    },
+    {
+      "position": 35,
+      "question": "如何用 PyTorch 训练一个 CNN?",
+      "expected_page": null,
+      "cited_pages": [],
+      "verdict": "supported",
+      "claim_type": "refusal",
+      "fabricated_facts": false,
+      "rationale": "回答明确说明资料未涉及 PyTorch、CNN 和训练流程，没有输出无法由资料支持的训练步骤。"
+    }
+  ],
+  "limitations": "这是 8 题的定向人工抽检，只核验主要结论与引用依据，不等同于 35 题逐句人工审核，也不单独构成完整的语义忠实度评分。"
+}
