@@ -226,7 +226,9 @@ def select_questions(
 
 
 def is_refusal(answer: str) -> bool:
-    return any(marker in answer for marker in REFUSAL_MARKERS)
+    """只检查回答开头，避免把正常回答末尾的“原文未说明”误判为整题拒答。"""
+    head = " ".join(answer.strip().split())[:320]
+    return any(marker in head for marker in REFUSAL_MARKERS)
 
 
 def evaluate_one(agent: DocumentAgent, item: dict[str, Any], position: int) -> dict[str, Any]:
@@ -259,7 +261,7 @@ def evaluate_one(agent: DocumentAgent, item: dict[str, Any], position: int) -> d
         retrieval_hit = int(expected_page) in result.accessed_pages
         citation_hit = int(expected_page) in result.cited_pages
         citation_valid = not bool(result.unverified_pages)
-        answered_well = (not refused) and citation_hit and citation_valid
+        answered_well = citation_hit and citation_valid and len(result.answer.strip()) >= 40
         success = answered_well
 
     return {
@@ -309,7 +311,7 @@ def build_summary(records: Sequence[dict[str, Any]]) -> dict[str, Any]:
         "unanswerable": unanswerable_count,
         "successes": len(successful),
         "success_rate": round(len(successful) / len(records), 4) if records else 0.0,
-        "answered": sum(1 for record in records if record.get("error") is None and not record.get("refused")),
+        "answered": answerable_count - count_true("refused", answerable),
         "errors": sum(1 for record in records if record.get("error")),
         "retrieval_hits": count_true("retrieval_hit", answerable),
         "retrieval_hit_rate": round(count_true("retrieval_hit", answerable) / answerable_count, 4) if answerable_count else None,

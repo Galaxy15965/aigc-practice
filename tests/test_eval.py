@@ -28,6 +28,10 @@ class EvalTests(unittest.TestCase):
         self.assertTrue(is_refusal("资料中没有相关内容。"))
         self.assertFalse(is_refusal("依据：第 11 页。"))
 
+    def test_partial_caveat_does_not_make_answer_a_refusal(self):
+        answer = "根据资料，这里给出完整答案。" + ("这是正文内容。" * 80) + "但这一点文档中没有提到。"
+        self.assertFalse(is_refusal(answer))
+
     def test_summary_counts_answer_and_refusal(self):
         records = [
             {

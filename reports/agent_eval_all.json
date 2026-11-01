@@ -1,0 +1,2655 @@
+{
+  "generated_at": "2026-11-01T07:06:03.015827+00:00",
+  "model": "deepseek-chat",
+  "sample": {
+    "limit": 0,
+    "mode": "stratified",
+    "requested_total": 35
+  },
+  "summary": {
+    "questions": 35,
+    "answerable": 30,
+    "unanswerable": 5,
+    "successes": 35,
+    "success_rate": 1.0,
+    "answered": 30,
+    "errors": 0,
+    "retrieval_hits": 30,
+    "retrieval_hit_rate": 1.0,
+    "citation_hits": 30,
+    "citation_hit_rate": 1.0,
+    "citation_valid": 30,
+    "citation_valid_rate": 1.0,
+    "refusal_correct": 5,
+    "refusal_accuracy": 1.0,
+    "tool_calls_total": 94,
+    "tool_calls_ok": 94,
+    "tool_call_success_rate": 1.0,
+    "avg_tool_calls": 2.69,
+    "avg_elapsed_s": 3.39
+  },
+  "api_requests": 88,
+  "retries": 0,
+  "usage_totals": {
+    "prompt_tokens": 155849,
+    "completion_tokens": 11416,
+    "total_tokens": 167265,
+    "prompt_cache_hit_tokens": 90624,
+    "prompt_cache_miss_tokens": 65225
+  },
+  "results": [
+    {
+      "position": 1,
+      "question": "调查报告的写作一般要经历哪三个阶段?",
+      "expected_page": 11,
+      "answer": "调查报告的写作一般要经历**准备、起草、修改**三个阶段。其中，写作准备阶段是打基础的阶段，指从接受任务到开始调查期间所要做的准备工作；准备工作做得好，调查报告才有头绪。\n\n依据：第11页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        7,
+        11,
+        12,
+        20,
+        23,
+        36,
+        48,
+        51
+      ],
+      "cited_pages": [
+        11
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.51,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告的写作 三个阶段\"}",
+          "ok": true,
+          "pages": [
+            7,
+            11,
+            20,
+            23,
+            36
+          ],
+          "count": 5,
+          "best_score": 11.3045,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 写作过程 步骤\"}",
+          "ok": true,
+          "pages": [
+            7,
+            11,
+            12,
+            48,
+            51
+          ],
+          "count": 5,
+          "best_score": 3.9473,
+          "error": null,
+          "duration_ms": 0.1
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "question": "写调查报告前为什么要做充分的思想准备?",
+      "expected_page": 12,
+      "answer": "## 写调查报告前要做充分思想准备的原因\n\n课程资料把“充分的思想准备”列为写作准备阶段的第一项准备，理由如下：\n\n**1. 思想是行动的先导**\n资料开宗明义指出“思想是行动的先导”。在动笔和调查之前，必须对以下问题认真思考和酝酿：\n- 调查报告要解决什么问题、要达到什么目的；\n- 调查需要到哪些地方、什么单位，找谁调查；\n- 主要进行哪些程序、安排哪些步骤、采取什么方法；\n- 需要多长时间、多少人手和经费；\n- 可能遇到些什么困难和问题。\n\n目的是“做到每一步搞什么、怎么搞都心中有数”。\n\n**2. 思想准备越充分，后续三个环节的质量越高**\n资料明确给出了思想准备充分程度与调查、分析、研究三个环节效果之间的递进关系：\n- 调查过程中对调查情况**理解可能就越深入**；\n- 对调查获取数据的**分析可能就更科学**；\n- 从调查材料和数据中研究凝练有关规律性认识**可能就更快捷**。\n\n**3. 放在整个写作流程中看：准备是打基础的阶段**\n资料指出，一篇调查报告从无到有大致经历“准备——起草——修改”三个阶段，其中写作准备阶段是打基础的，即从接受任务到开始调查这期间要做的准备工作；“准备工作做的好，调查报告才有头绪”。思想准备正是这一基础阶段的第一项内容，与“必要的知识准备”“较为周密的计划”并列。\n\n**补充说明**：资料中“思想上准备阅充分”一句疑为“越充分”的排版讹误，此处按上下文语义理解。\n\n依据：第11页、第12页",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        11,
+        12,
+        13,
+        14,
+        16,
+        23,
+        29,
+        32,
+        35,
+        43,
+        45,
+        51
+      ],
+      "cited_pages": [
+        11,
+        12
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 5.27,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"写调查报告前 思想准备\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            11,
+            12,
+            14,
+            23,
+            29,
+            32,
+            45,
+            51
+          ],
+          "count": 8,
+          "best_score": 6.5195,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 准备工作 意义 必要性\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            11,
+            12,
+            14,
+            16,
+            32,
+            35,
+            43,
+            51
+          ],
+          "count": 8,
+          "best_score": 7.0672,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 12, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            12
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 13, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            13
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "question": "根据调研任务,需要提前准备哪些知识和材料?",
+      "expected_page": 13,
+      "answer": "根据课程资料，调查报告写作的“准备”阶段（从接受任务到开始调查）需要做三方面准备，其中“知识准备”和“材料准备”的具体内容如下：\n\n## 一、必要的知识准备（第13页）\n\n资料提出“行军打仗，粮草先行”，要根据调研内容和任务，有选择地准备文件和材料，熟悉与调研课题相关的知识，具体包括：\n\n1. **学习了解党的路线、方针、政策**；\n2. **研究相关上级有关指示、要求和规定**（原文表述为“研究XX、XX及上级有关指示、要求和规定”）；\n3. **了解本单位有关经验做法**；\n4. **了解之前有关类似调查情况和意见建议**。\n\n资料强调：相关知识储备越丰厚、掌握情况越多，视野就越开阔、全局意识就越强，才能从纷繁复杂的现象中把握问题实质，作出透彻分析，提出有针对性的对策建议。\n\n## 二、需要预先备好的材料（第14页）\n\n在“周密的计划”部分，资料补充说明还要做“其他准备”，即：\n\n- 调查所需的**表格、问卷**；\n- 调查**重点对象、典型单位和个人**的有关资料。\n\n这些都要预先准备好，以便随时使用和查阅。\n\n## 三、配套的两项准备（同属准备阶段）\n\n- **思想准备（第12页）**：想清楚调查报告要解决什么问题、达到什么目的，到哪些地方和单位、找谁调查，主要程序和步骤、采取什么方法，需要多长时间、人手和经费，以及可能遇到的困难和问题，做到“每一步搞什么、怎么搞都心中有数”。\n- **周密的计划（第14页）**：把调查的指导思想和目的、重点内容和问题、范围和对象、形式和方法、时间和阶段划分等列入计划，防止考虑不周打乱仗。\n\n另外，资料在调查实施阶段提出“五勤”（腿勤、嘴勤、眼勤、耳勤、手勤，第18页），属于调查过程中的要求，不是前期准备内容，供参考。\n\n依据：第12页、第13页、第14页",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        11,
+        12,
+        13,
+        14,
+        16,
+        18,
+        20,
+        31,
+        51
+      ],
+      "cited_pages": [
+        12,
+        13,
+        14,
+        18
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 5.96,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调研任务 准备 知识 材料\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            16,
+            18,
+            20,
+            51
+          ],
+          "count": 8,
+          "best_score": 13.8552,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调研 前期准备 需要掌握的知识\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            16,
+            18,
+            31,
+            51
+          ],
+          "count": 8,
+          "best_score": 13.965,
+          "error": null,
+          "duration_ms": 0.1
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 13, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            13
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 14, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            14
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "question": "“凡事预则立,不预则废”讲的是哪一项准备?",
+      "expected_page": 14,
+      "answer": "“凡事预则立，不预则废”在课程中讲的是**调查报告写作准备阶段中的“要有较为周密的计划”**这一项准备。\n\n具体来说，就是把以下内容都列入计划，以便于操作和实施，防止因考虑不周打乱仗、影响调查质量：\n\n- 调查的指导思想和目的\n- 调查的重点内容和问题\n- 调查的范围和对象\n- 调查的形式和方法\n- 调查的时间和阶段划分\n- 与调查相关的其他问题\n\n此外，文中还提到可能要做一些其他准备，比如调查所需的表格、问卷，以及调查重点对象、典型单位和个人的有关资料等，都要预先准备好，以便随时使用和查阅。\n\n依据：第14页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        11,
+        12,
+        14,
+        15,
+        51
+      ],
+      "cited_pages": [
+        14
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.39,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"凡事预则立 不预则废\"}",
+          "ok": true,
+          "pages": [
+            14
+          ],
+          "count": 1,
+          "best_score": 7.0314,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"预则立 准备 计划\"}",
+          "ok": true,
+          "pages": [
+            11,
+            12,
+            14,
+            15,
+            51
+          ],
+          "count": 5,
+          "best_score": 6.7706,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "question": "前言有哪几种常见的写法?",
+      "expected_page": 21,
+      "answer": "课程资料中讲的是**调查报告的前言**，其中列出了三种常见写法：\n\n**前言的作用**：一般概括地介绍根据什么、由什么人、到什么地方、围绕什么问题进行了调查，并得出调查的结论，或提示全文重点，为了解把握全文打下基础。前言的文字必须精练、简短、概括。\n\n**常见写法**：\n\n1. **概述式**：概括地写出调查的基本情况、问题、目的和主要事宜及其重要意义。\n2. **结论式**：开门见山、旗帜鲜明地对所调查的情况、问题或事宜作出结论，然后在正文部分再加以叙述和分析。\n3. **问答式**：用提出问题、回答问题的方式，概括介绍调查结果和基本经验。\n\n另外，资料还提到调查报告的结构大体上可分为前言（或导语）、主体和结尾三个部分；结尾的常见写法有总结式、呼应式、展望式、说明式等，可与前言区分开。\n\n依据：第21页、第20页、第26页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        7,
+        20,
+        21,
+        22,
+        26,
+        29,
+        32,
+        34,
+        36,
+        40,
+        51
+      ],
+      "cited_pages": [
+        20,
+        21,
+        26
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.97,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"前言 写法 常见类型\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            22,
+            26,
+            29,
+            32,
+            34,
+            36
+          ],
+          "count": 8,
+          "best_score": 9.8617,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"前言 写作 目的 背景 说明\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            7,
+            20,
+            21,
+            22,
+            26,
+            36,
+            40,
+            51
+          ],
+          "count": 8,
+          "best_score": 6.0812,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "question": "概述式前言是怎么写的?",
+      "expected_page": 21,
+      "answer": "**概述式前言**是调查报告前言的一种常见写法。\n\n**定义**：概括地写出调查的基本情况、问题、目的和主要事宜及其重要意义。\n\n**背景**：前言在调查报告结构中位于主体之前，一般用来概括介绍“根据什么、由什么人、到什么地方、围绕什么问题进行了调查”，并得出调查结论或提示全文重点，为读者了解和把握全文打下基础。前言文字必须精练、简短、概括。\n\n**与其他两种前言写法的区别**：\n- 结论式：开门见山、旗帜鲜明地对所调查的情况、问题或事宜作出结论，然后在正文部分再加以叙述和分析。\n- 问答式：用提出问题、回答问题的方式，概括介绍调查结果和基本经验。\n\n文档中只给出了概述式的定义性说明，没有提供概述式的具体范例或逐句模板。\n\n依据：第21页（前言的定义与三种写法）、第20页（调查报告结构分为前言、主体、结尾）",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        20,
+        21,
+        25,
+        26,
+        27
+      ],
+      "cited_pages": [
+        20,
+        21
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.73,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"概述式前言 写法\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            25,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 13.5285,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"前言 概述 写作方法\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21
+          ],
+          "count": 2,
+          "best_score": 7.9462,
+          "error": null,
+          "duration_ms": 0.1
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "question": "结论式前言有什么特点?",
+      "expected_page": 21,
+      "answer": "**结论式前言的特点**\n\n根据课程资料，结论式是调查报告前言（导语）的常见写法之一，其特点是：\n\n- **开门见山**：不铺垫、不绕弯，直接进入正题。\n- **旗帜鲜明地对所调查的情况、问题或事宜作出结论**：在前言部分就先把结论亮出来。\n- **结论在前、叙述分析在后**：作出结论之后，再在正文部分加以叙述和分析。\n\n作为背景，前言整体上要求“文字必须精练、简短、概括”，作用是概括介绍根据什么、由什么人、到什么地方、围绕什么问题进行调查，并得出调查结论或提示全文重点，为把握全文打下基础。结论式与概述式、问答式并列为前言的三种常见写法。\n\n依据：第21页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        20,
+        21,
+        25,
+        26,
+        27,
+        32,
+        36
+      ],
+      "cited_pages": [
+        21
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.56,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"结论式前言 特点\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            25,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 10.3674,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"前言 写法 类型\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            26,
+            32,
+            36
+          ],
+          "count": 5,
+          "best_score": 7.4562,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "question": "问答式前言是怎么组织的?",
+      "expected_page": 21,
+      "answer": "根据课程资料，问答式前言的组织方式如下：\n\n**问答式前言**：用提出问题、回答问题的方式，概括介绍调查结果和基本经验。\n\n它属于调查报告前言（导语）的三种常见写法之一，另外两种是概述式和结论式。前言整体上要概括介绍“根据什么、由什么人、到什么地方、围绕什么问题进行了调查”，并得出调查结论或提示全文重点；文字必须精练、简短、概括。\n\n文档中没有给出问答式前言的具体范例或更细的组织步骤。\n\n依据：第21页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26
+      ],
+      "cited_pages": [
+        21
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.35,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"问答式前言 组织\"}",
+          "ok": true,
+          "pages": [
+            19,
+            20,
+            21,
+            23
+          ],
+          "count": 4,
+          "best_score": 7.9462,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"前言 写法 结构\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            22,
+            25,
+            26
+          ],
+          "count": 5,
+          "best_score": 7.4562,
+          "error": null,
+          "duration_ms": 0.1
+        }
+      ]
+    },
+    {
+      "position": 9,
+      "question": "调查报告的主体有哪几种结构?",
+      "expected_page": 22,
+      "answer": "**调查报告主体的结构**（常见有三种）：\n\n1. **横式结构**：把调查得来的情况、经验或问题，按其内在逻辑关系分成几个并列的部分，紧紧围绕全文的中心分别加以叙述和说明。（第22页）\n\n2. **纵式结构**：根据事物发展过程的先后顺序，或按照摆情况、搞分析、拿对策等递进式的关系，列出几个大问题，一个问题一个问题地加以阐述或论证。例如《关于基层组织建设新情况新问题的调查与思考》的主体写了三个问题：新发展新进步、新情况新问题、新对策新思路。（第24页）\n\n3. **综合式结构**（也叫纵横交错式结构）：横中有纵、纵中有横，相互穿插；经验性调查报告往往采用这种结构。例如《对当前xxx高校大学生购买彩票情况的调查与建议》的主体写了三块内容：基本情况、对学业的影响、应对建议。这三块层层推进，属于纵式结构；但每一块里又并列着若干小问题，因此是纵中有横、纵横交错。（第25页）\n\n补充：调查报告整体结构大体分为前言（导语）、主体和结尾三个部分，主体是主要部分或基本内容。（第20、22页）\n\n依据：第20页、第22页、第24页、第25页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        7,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        34,
+        43
+      ],
+      "cited_pages": [
+        20,
+        22,
+        24,
+        25
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 3.79,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 主体 结构\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            7,
+            20,
+            22,
+            23,
+            24,
+            25,
+            29,
+            43
+          ],
+          "count": 8,
+          "best_score": 7.8905,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告主体部分的结构形式 纵式 横式 综合式\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            20,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            34
+          ],
+          "count": 8,
+          "best_score": 22.0418,
+          "error": null,
+          "duration_ms": 0.3
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "question": "什么是横式结构?",
+      "expected_page": 22,
+      "answer": "**横式结构**是调查报告主体部分常见的一种结构方式。\n\n**定义**：把调查得来的情况、经验或问题，按其内在逻辑关系，分成几个**并列**的部分，紧紧围绕全文的中心分别加以叙述和说明。\n\n**示例**（第23页）：大学教务部门的调查报告《关于xxx大学加强新时代体育美育劳育的调查与思考》，主体部分写了三个问题：\n1. 习近平新时代教育思想对高校体育美育劳育工作的具体要求；\n2. xxx大学在体育美育劳育工作上的创新发展与典型经验做法；\n3. 如何进一步加强对体育美育劳育工作的组织领导和整体设计。\n\n**对比**：与它并列的还有“纵式结构”，即按事物发展过程的先后顺序，或按摆情况、搞分析、拿对策等递进关系，一个问题一个问题地阐述；以及“综合式结构”（纵横交错式），即横中有纵、纵中有横，相互穿插。\n\n依据：第22页、第23页、第24页、第25页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        20,
+        22,
+        23,
+        24,
+        25,
+        43
+      ],
+      "cited_pages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 3.15,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"横式结构\"}",
+          "ok": true,
+          "pages": [
+            20,
+            22,
+            24,
+            25,
+            43
+          ],
+          "count": 5,
+          "best_score": 6.608,
+          "error": null,
+          "duration_ms": 0.6
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 22}",
+          "ok": true,
+          "pages": [
+            22
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 23}",
+          "ok": true,
+          "pages": [
+            23
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "question": "什么是纵式结构?",
+      "expected_page": 24,
+      "answer": "**纵式结构**是调查报告主体部分的一种常见结构方式。\n\n根据文档，纵式结构就是**根据事物发展过程的先后顺序，或按照“摆情况、搞分析、拿对策”等递进式的关系，列出几个大问题，一个问题一个问题地加以阐述或论证**。\n\n文档给出的例子是组织部门的调查报告《关于基层组织建设新情况新问题的调查与思考》，其主体部分写了三个问题：\n1. 基层组织建设的新发展、新进步；\n2. 基层组织建设的新情况、新问题；\n3. 基层组织建设的新对策、新思路。\n\n文档还提到，纵式结构常与横式结构结合使用，形成“综合式结构”（纵横交错式），即“横中有纵、纵中有横，相互穿插”。\n\n依据：第24页、第25页",
+      "tool_calls": 1,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        20,
+        22,
+        24,
+        25,
+        43
+      ],
+      "cited_pages": [
+        24,
+        25
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.24,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"纵式结构\"}",
+          "ok": true,
+          "pages": [
+            20,
+            22,
+            24,
+            25,
+            43
+          ],
+          "count": 5,
+          "best_score": 6.5974,
+          "error": null,
+          "duration_ms": 0.3
+        }
+      ]
+    },
+    {
+      "position": 12,
+      "question": "什么是综合式结构?",
+      "expected_page": 25,
+      "answer": "**综合式结构**（也叫纵横交错式结构）是调查报告主体部分的一种结构方式，指“横中有纵、纵中有横，相互穿插”。在经验性调查报告中往往采用这种结构。\n\n文档给出的例子是某大学生社团的调查报告《对当前xxx高校大学生购买彩票情况的调查与建议》。该报告主体部分写了三个问题：\n1. 大学生购买彩票的基本情况；\n2. 大学生购买彩票对学业带来的影响；\n3. 应对大学生购买彩票问题的建议。\n\n这三块层层推进，属于纵式结构；但每一块里又并列着若干个小问题，可以说是纵中有横、纵横交错，因此称为综合式结构。\n\n依据：第25页",
+      "tool_calls": 1,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        22,
+        24,
+        25,
+        26,
+        27
+      ],
+      "cited_pages": [
+        25
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.28,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"综合式结构\"}",
+          "ok": true,
+          "pages": [
+            22,
+            24,
+            25,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 10.7106,
+          "error": null,
+          "duration_ms": 0.3
+        }
+      ]
+    },
+    {
+      "position": 13,
+      "question": "结尾常见的写法有哪几种?",
+      "expected_page": 26,
+      "answer": "课程资料中关于“结尾”的常见写法，出现在调查报告写作部分，共列出四种：\n\n1. **总结式**：对调查的内容进行总结，对根据调查得出的结论或规律性认识进行概括和凝练，以便更好地体现调查报告的成果，提高对现实工作的指导性。\n2. **呼应式**：呼应调查报告开头的内容。例如，有的在开头就点明了调查工作的主要目的、调查的主要对象，结尾则呼应是否达成目标、是否形成了有效的结论。\n3. **展望式**：资料中只列出了名称，没有展开说明。\n4. **说明式**：资料中只列出了名称，没有展开说明。\n\n资料还指出，结尾有时是对正文的深化，有时是对正文的补充，有时是对正文的呼应，有时也可能是对正文中有关重要问题的强调。\n\n需要说明的是，第26页原文在“呼应式”的说明之后即结束，**展望式和说明式的具体含义，文档中没有提到**。\n\n依据：第26页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        18,
+        20,
+        21,
+        22,
+        26,
+        36
+      ],
+      "cited_pages": [
+        26
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 4.17,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"结尾的写法 常见类型\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            22,
+            26,
+            36
+          ],
+          "count": 5,
+          "best_score": 11.1061,
+          "error": null,
+          "duration_ms": 0.7
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"文章结尾方式 总结全文 首尾呼应\"}",
+          "ok": true,
+          "pages": [
+            18,
+            20,
+            21,
+            22,
+            26
+          ],
+          "count": 5,
+          "best_score": 7.261,
+          "error": null,
+          "duration_ms": 0.5
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 26, \"max_chars\": 4000}",
+          "ok": true,
+          "pages": [
+            26
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 14,
+      "question": "总结式结尾的作用是什么?",
+      "expected_page": 26,
+      "answer": "**总结式结尾的作用**（课程资料原文表述）：\n\n主要是对调查的内容进行总结，对根据调查得出的结论或规律性认识进行概括和凝练，以便更好地体现调查报告的成果，提高对现实工作的指导性。\n\n补充说明：结尾（结束语）整体上有时是对正文的深化，有时是对正文的补充，有时是对正文的呼应，有时也可能是对正文中有关重要问题的强调；常见的结尾写法除总结式外，还有呼应式、展望式、说明式等。另外，也可以不写结束语，以正文末段自然结束，视实际情况而定。\n\n依据：第26页、第27页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        18,
+        20,
+        21,
+        22,
+        25,
+        26,
+        27,
+        32,
+        35
+      ],
+      "cited_pages": [
+        26,
+        27
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.44,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"总结式结尾的作用\"}",
+          "ok": true,
+          "pages": [
+            25,
+            26,
+            27,
+            32,
+            35
+          ],
+          "count": 5,
+          "best_score": 12.9911,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"结尾方式 总结全文 呼应开头\"}",
+          "ok": true,
+          "pages": [
+            18,
+            20,
+            21,
+            22,
+            26
+          ],
+          "count": 5,
+          "best_score": 18.1223,
+          "error": null,
+          "duration_ms": 0.4
+        }
+      ]
+    },
+    {
+      "position": 15,
+      "question": "呼应式结尾呼应的是什么内容?",
+      "expected_page": 26,
+      "answer": "**呼应式结尾呼应的是调查报告开头的内容。**\n\n具体来说，文档举的例子是：有的报告在开头就点明了调查工作的主要目的、调查的主要对象，结尾则呼应开头，说明是否达成了目标、形成了有效的结论。\n\n补充说明：结尾（结束语）常见的写法有总结式、呼应式、展望式、说明式等；结尾有时是对正文的深化，有时是对正文的补充，有时是对正文的呼应，有时是对正文中重要问题的强调。\n\n依据：第26页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        20,
+        21,
+        24,
+        25,
+        26,
+        27
+      ],
+      "cited_pages": [
+        26
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.4,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"呼应式结尾\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            24,
+            25,
+            26,
+            27
+          ],
+          "count": 6,
+          "best_score": 14.9354,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"结尾 呼应 开头 首尾照应\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            20,
+            26
+          ],
+          "count": 2,
+          "best_score": 15.42,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 16,
+      "question": "展望式结尾适用于哪类调查?",
+      "expected_page": 27,
+      "answer": "展望式结尾主要适用于**对一类事务、一类问题或一系列现象的“趋势性调查”**，即根据调查情况对其发展变化情况进行展望。\n\n依据：第27页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        15,
+        18,
+        20,
+        24,
+        25,
+        26,
+        27
+      ],
+      "cited_pages": [
+        27
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.27,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"展望式结尾 调查报告\"}",
+          "ok": true,
+          "pages": [
+            20,
+            24,
+            25,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 12.338,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告结尾方式 展望\"}",
+          "ok": true,
+          "pages": [
+            15,
+            18,
+            20,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 8.3152,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 17,
+      "question": "说明式结尾主要写什么?",
+      "expected_page": 27,
+      "answer": "说明式结尾主要是**对报告中一些特别重要的问题作说明，强调其重要性**。\n\n补充说明：结尾（结束语）常见的写法有总结式、呼应式、展望式、说明式等；结尾有时是对正文的深化、补充、呼应，有时是对正文中有关重要问题的强调。另外，也可以不写结束语，现在多数调查报告就没有结束语，以正文末段自然结束，需要就写、不需要就不写。\n\n依据：第27页、第26页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        18,
+        20,
+        21,
+        25,
+        26,
+        27
+      ],
+      "cited_pages": [
+        26,
+        27
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.09,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"说明式结尾 写什么\"}",
+          "ok": true,
+          "pages": [
+            20,
+            21,
+            25,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 10.2521,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"结尾方式 说明式 总结式\"}",
+          "ok": true,
+          "pages": [
+            18,
+            21,
+            25,
+            26,
+            27
+          ],
+          "count": 5,
+          "best_score": 16.9773,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 18,
+      "question": "调查报告一定要写结束语吗?",
+      "expected_page": 27,
+      "answer": "**不一定需要写结束语。**\n\n课程资料明确指出：调查报告的结构大体上分为前言（导语）、主体和结尾三个部分，但结尾（结束语）并非必需。原文写道：“当然也可以不要结束语，现在多数的调查报告就没有结束语，以正文部分的末段自然结束。这要根据实际情况而定，需要就写，不需要就不写。”\n\n如果决定写结束语，常见写法有四种：\n1. **总结式**：对调查内容进行总结，概括凝练根据调查得出的结论或规律性认识，以更好体现调查成果、提高对现实工作的指导性。\n2. **呼应式**：呼应开头内容，例如开头点明调查目的、调查对象，结尾呼应是否达成目标、形成有效结论。\n3. **展望式**：主要适用于对一类事务、一类问题或一系列现象的趋势性调查，根据调查情况展望其发展变化。\n4. **说明式**：对报告中一些特别重要的问题作说明，强调其重要性。\n\n结尾的作用有时是对正文的深化，有时是补充，有时是呼应，有时是对正文中重要问题的强调。\n\n依据：第26页、第27页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        7,
+        11,
+        20,
+        22,
+        25,
+        26,
+        27,
+        29,
+        31
+      ],
+      "cited_pages": [
+        26,
+        27
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 4.44,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 结束语\"}",
+          "ok": true,
+          "pages": [
+            7,
+            11,
+            26,
+            27,
+            29
+          ],
+          "count": 5,
+          "best_score": 3.9942,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告的结构 写作要求\"}",
+          "ok": true,
+          "pages": [
+            7,
+            20,
+            22,
+            25,
+            31
+          ],
+          "count": 5,
+          "best_score": 6.3529,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 27, \"max_chars\": 2000}",
+          "ok": true,
+          "pages": [
+            27
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 19,
+      "question": "调查报告按作用可以分成哪几类?",
+      "expected_page": 29,
+      "answer": "按作用划分，调查报告可以分为以下四类：\n\n1. **提供情况的调查报告**\n2. **推广典型经验的调查报告**\n3. **查实问题或事故、案件性的调查报告**\n4. **研究探索性的调查报告**\n\n文档还说明，调查报告种类繁多，分类方法也不尽一致，除按作用划分外，还有按时间划分（历史情况、现实情况）、按内容性质划分（如高校教师思想情况、大学生素质情况、基层建设情况）、按调查范围划分（单项、多项）等；各种分类方法都有一定道理，但很难划分得完全清楚、互不交叉。不同类型的调查报告有不同的调查意向，也就是调查目的。\n\n依据：第29页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        7,
+        15,
+        22,
+        29,
+        32,
+        34,
+        35,
+        36
+      ],
+      "cited_pages": [
+        29
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 4.08,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 按作用 分类\"}",
+          "ok": true,
+          "pages": [
+            15,
+            22,
+            29,
+            32,
+            35
+          ],
+          "count": 5,
+          "best_score": 12.0637,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告的类型 种类\"}",
+          "ok": true,
+          "pages": [
+            7,
+            29,
+            32,
+            34,
+            36
+          ],
+          "count": 5,
+          "best_score": 8.3828,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 29}",
+          "ok": true,
+          "pages": [
+            29
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 20,
+      "question": "什么是综合型调查报告?",
+      "expected_page": 30,
+      "answer": "**综合型调查报告**的定义（第30页原文）：\n\n> 这是一种为研究制定某项方针政策或作出某方面工作规划部署，在广泛而系统地进行调查研究的基础上形成的综合性报告。\n\n其核心特点与要求：\n\n1. **最鲜明的特点是“综合性”**：一篇调查报告不可能包罗万象，但综合型调查报告一般涉及面比较广，而不是某个单项工作、某个侧面问题的专题报告。\n2. **目的**：为制定政策、作出决策提供依据。\n3. **写作要求**：必须占有大量材料，把方方面面的情况都考虑到，通过有理有据的、透彻清晰的综合分析研究，才能得出科学正确的结论。\n\n作为对照，第32页的**专题型调查报告**突出特点是“专题性”，针对某一方面的突出矛盾、薄弱环节或某项工作提出意见与对策，二者都“具有提供决策依据的性质和作用”。\n\n依据：第30页、第32页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        7,
+        11,
+        29,
+        30,
+        32,
+        35,
+        36,
+        38,
+        51
+      ],
+      "cited_pages": [
+        30,
+        32
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.79,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"综合型调查报告\"}",
+          "ok": true,
+          "pages": [
+            7,
+            11,
+            29,
+            30,
+            35
+          ],
+          "count": 5,
+          "best_score": 6.1729,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告的类型 综合型 专题型\"}",
+          "ok": true,
+          "pages": [
+            30,
+            32,
+            36,
+            38,
+            51
+          ],
+          "count": 5,
+          "best_score": 10.0892,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 21,
+      "question": "专题型调查报告的突出特点是什么?",
+      "expected_page": 32,
+      "answer": "专题型调查报告与综合性调查报告相比，**突出特点是它的专题性**。具体来说，它有两种常见情形：\n\n1. 针对一个时期某项建设和工作中需要解决的**某一个方面的突出矛盾和薄弱环节**，在摸清底数的基础上，经过分析研究，提出解决问题的意见和对策；\n2. 对**某个方面建设或某项工作经验和情况的总结分析**及工作指导的建议。\n\n此外，这种类型的调查报告也具有**提供决策依据**的性质和作用。\n\n文档中给出的例子：《当前XXX学习习近平总书记XX重要讲话的思想反映》《对当前XX机关干部素质状况的调查》《关于推动XXX高校大学生思想政治建设创新发展的调查与思考》。\n\n依据：第32页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        29,
+        32,
+        34,
+        36,
+        38,
+        41,
+        51
+      ],
+      "cited_pages": [
+        32
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.28,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"专题型调查报告 突出特点\"}",
+          "ok": true,
+          "pages": [
+            32,
+            36,
+            38,
+            41,
+            51
+          ],
+          "count": 5,
+          "best_score": 11.0674,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 类型 专题 特点\"}",
+          "ok": true,
+          "pages": [
+            29,
+            32,
+            34,
+            36,
+            51
+          ],
+          "count": 5,
+          "best_score": 7.3871,
+          "error": null,
+          "duration_ms": 0.1
+        }
+      ]
+    },
+    {
+      "position": 22,
+      "question": "先进典型调查报告主要反映什么?",
+      "expected_page": 33,
+      "answer": "先进典型调查报告主要反映的是**先进典型（包括先进单位、先进个人）的事迹和经验**。\n\n具体来说，文档指出这类调查报告的要求是：\n\n1. **客观反映先进典型的事迹或经验**——要通过深入的调查研究来完成；\n2. **深刻揭示其时代精神和思想内涵**；\n3. **总结提炼出能够发挥引示（示范）作用的典型材料和具有普遍指导意义的经验材料**。\n\n文档还说明，这类报告一般是在上级对某个典型还不够了解、还没有认可的情况下，下级向上级推荐典型时采用的一种公文形式；当上级考察后要进行宣传时，通常以通报形式转发下级的调查报告，或者直接在刊物上加按语刊发。文中举例：《XX党委深入贯彻落实党的十九大精神的事迹》《优秀学生干部XXX同志的先进事迹》，以及《县委书记的榜样——焦裕禄》《领导干部的楷模——孔繁森》等。\n\n另外，文档在区分“经验调查报告”时提到：先进典型以具体调查某某先进对象为主，而工作经验类报告主要以反映某个集体、某个单位某个领域的工作为主。\n\n依据：第33页、第34页、第35页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        8,
+        29,
+        32,
+        33,
+        34,
+        35,
+        36,
+        41
+      ],
+      "cited_pages": [
+        33,
+        34,
+        35
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 3.25,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"先进典型调查报告 反映\"}",
+          "ok": true,
+          "pages": [
+            8,
+            33,
+            34,
+            35,
+            41
+          ],
+          "count": 5,
+          "best_score": 11.9801,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 类型 先进典型 作用\"}",
+          "ok": true,
+          "pages": [
+            29,
+            32,
+            33,
+            35,
+            36
+          ],
+          "count": 5,
+          "best_score": 7.0901,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 23,
+      "question": "经验调查报告和先进典型调查报告有什么区别?",
+      "expected_page": 35,
+      "answer": "## 两者的区别\n\n课程资料把这两种调查报告分别列为第 3 类和第 4 类，并明确指出二者“有点类似”，但侧重点不同。\n\n**1. 调查对象不同（最核心的区别）**\n- 先进典型调查报告：以**具体的先进对象**为主，包括先进单位、先进个人，是对其事迹和经验的总结。\n- 经验调查报告：主要反映**某个集体、某个单位、某个领域的工作**，即某个单位某方面工作做得好、对面上工作有指导和推动作用，因而专门调查总结。\n\n**2. 写作目的与内容重点不同**\n- 先进典型调查报告：要客观反映先进典型的事迹或经验，**深刻揭示其时代精神和思想内涵**，总结提炼出能发挥示范（原文作“引示”）作用的典型材料和具有普遍指导意义的经验材料。\n- 经验调查报告：主要是**把成绩和效果写清楚，把经验做法提炼概括好**；同时还要反映**工作的过程**，即这项工作如何开始、进行中遇到什么矛盾和问题、怎么认识和解决、解决后带来什么变化。\n\n**3. 使用场合不同**\n- 先进典型调查报告：一般是在上级对某个典型还不够了解、还没有认可的情况下，下级向上级**推荐典型**时采用的公文形式；上级考察后宣传时，通常以通报形式转发，或直接在刊物上加按语刊发。\n- 经验调查报告：突出特点和优势在于**经验性**，写作时要靠经验性取胜。\n\n**4. 写作难度与代表作品**\n- 先进典型调查报告：既是最容易也是最难写的一种。容易是因为小学生写表扬稿也属于先进事迹范畴；难是因为写出有影响力的作品绝非易事。代表之作如《县委书记的榜样——焦裕禄》《领导干部的楷模——孔繁森》。\n- 经验调查报告：资料未专门讨论其难度，只给出例文，如《XXX大力推进基层民主建设的经验》《XXX大学“三全育人”示范校建设的探索与实践》《XXX团队“互联网+”创新创业大赛有效经验调查》。\n\n依据：第33页、第34页、第35页、第36页",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        7,
+        8,
+        22,
+        23,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        47
+      ],
+      "cited_pages": [
+        33,
+        34,
+        35,
+        36
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 5.08,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"经验调查报告 先进典型调查报告 区别\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            8,
+            22,
+            29,
+            32,
+            33,
+            34,
+            35,
+            36
+          ],
+          "count": 8,
+          "best_score": 14.0453,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"经验调查报告的特点与写作要求\", \"top_k\": 6}",
+          "ok": true,
+          "pages": [
+            7,
+            23,
+            31,
+            32,
+            36,
+            47
+          ],
+          "count": 6,
+          "best_score": 9.5099,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 35, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            35
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 33, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            33
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 24,
+      "question": "问题调查报告一般针对什么样的问题?",
+      "expected_page": 37,
+      "answer": "**问题调查报告针对的问题**\n\n根据课程资料，问题调查报告一般针对以下三类情况：\n\n1. **某一时期内出现的带有倾向性的问题**；\n2. **某一严重问题**；\n3. **某一系列现象**。\n\n这类报告是通过深入调查研究撰写的**专题性书面报告**。资料还指出，有的教科书把这类报告称为“揭露型的调查报告”，两者意思大体相同。\n\n针对不同类型的问题，写作要求也不同：\n- **倾向性问题**：要搞清问题的表现、程度和性质，找准背后的主客观原因，分析其对建设和工作的危害，并提出解决问题的对策和办法。\n- **严重问题或事故案件**：必须把事情的来龙去脉、前因后果以及当事人、时间、地点、具体责任等交待清楚，有的还要提出处理意见或写明处理结果；同时要着眼汲取教训、引以为戒，达到普遍接受教育、促进工作改进和落实、避免和防止类似问题及案件发生的目的，并有针对性地提出建设性意见和措施。\n\n资料中给出的例子有《对当前大学生职业规划的调查与思考》《关于当前00后大学生“躺平主义”盛行趋势的调查与建议》。\n\n依据：第37页、第38页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        22,
+        24,
+        25,
+        27,
+        29,
+        32,
+        34,
+        36,
+        37,
+        38,
+        39
+      ],
+      "cited_pages": [
+        37,
+        38
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 3.96,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"问题调查报告 针对什么样的问题\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            22,
+            24,
+            25,
+            27,
+            29,
+            37,
+            38,
+            39
+          ],
+          "count": 8,
+          "best_score": 10.6387,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 类型 问题调查\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            22,
+            24,
+            29,
+            32,
+            34,
+            36,
+            37,
+            38
+          ],
+          "count": 8,
+          "best_score": 5.8159,
+          "error": null,
+          "duration_ms": 0.1
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 37, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            37
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 25,
+      "question": "研究探索型调查报告以什么内容为主?",
+      "expected_page": 39,
+      "answer": "**研究探索型调查报告以反映现实社会中的新人、新事、新发明、新创造、新做法、新经验为主。**\n\n具体要点（第39页）：\n\n1. **主要内容**：反映现实社会中的新人、新事、新发明、新创造、新做法、新经验。\n2. **目的**：扶植新生事物，引导和启发人们解放思想、与时俱进、开拓创新，不断开创工作和生活的新局面。\n3. **必须表述清楚的内容**：实际工作中遇到的矛盾和问题、所采取的新的对策和办法、收到的效果以及得出的有益启示。\n4. **写作要求**：新情况新问题来得比较快时，思想要敏锐、论证要充分，对赞同什么、反对什么、应该怎样做、不应该怎么做要作出正确回答；用“解剖麻雀”的方法解决带全局性的问题。\n5. **成果转化**：对群众在实践中创造的好做法、好经验，只要看准了或被实践证明可行管用，就要提出建议，使之转化为工作决策和制度规定，在更大范围长期起作用。\n\n依据：第39页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        7,
+        32,
+        35,
+        36,
+        38,
+        39,
+        49
+      ],
+      "cited_pages": [
+        39
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 3.5,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"研究探索型调查报告 以什么内容为主\"}",
+          "ok": true,
+          "pages": [
+            35,
+            36,
+            38,
+            39,
+            49
+          ],
+          "count": 5,
+          "best_score": 12.5183,
+          "error": null,
+          "duration_ms": 0.8
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告类型 探索型 描述型 解释型\"}",
+          "ok": true,
+          "pages": [
+            7,
+            32,
+            36,
+            38,
+            39
+          ],
+          "count": 5,
+          "best_score": 11.2074,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 39}",
+          "ok": true,
+          "pages": [
+            39
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 26,
+      "question": "选材料时用了什么比喻来说明要因材施用?",
+      "expected_page": 40,
+      "answer": "文档中用的是**木工选料**的比喻：\n\n> “木工做活儿要选料，弯木做犁，直木做梁，曲里拐弯的木头，根本就不会让它当梁作柱。调查报告的写作，同样需要注重材料的选择。”\n\n也就是说，弯的木头用来做犁，直的木头用来做梁，弯曲不直的木头绝不会被用来做梁或柱子；写调查报告时选择材料也是同样的道理，要因材施用。\n\n依据：第40页",
+      "tool_calls": 2,
+      "steps": 2,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        33,
+        40,
+        45,
+        46,
+        47
+      ],
+      "cited_pages": [
+        40
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 2.06,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"选材料 比喻 因材施用\"}",
+          "ok": true,
+          "pages": [
+            33,
+            40,
+            45,
+            46,
+            47
+          ],
+          "count": 5,
+          "best_score": 5.1401,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"材料 比喻 木材 用途 合适\"}",
+          "ok": true,
+          "pages": [
+            33,
+            40,
+            45,
+            46,
+            47
+          ],
+          "count": 5,
+          "best_score": 1.5469,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 27,
+      "question": "为什么要选择能印证主题的统计数字?",
+      "expected_page": 42,
+      "answer": "## 为什么要选择能印证主题的统计数字\n\n课程资料在“选好材料”这一部分，把“善于选择最能印证主题的统计数字”列为第二条要求，并给出了以下理由：\n\n**1. 数据本身很有说服力**\n原文说：“有时，数据是很有说服力的，用好了，通过数字能够知范围、知变化、知程度，能够帮助人们从‘量’的判定中深化对‘质’的认识。”也就是说，统计数字能让人知道范围有多大、变化如何、程度多深，从而由“量”的把握上升到对“质”的认识。\n\n**2. 使论据充分、论点成立**\n原文举的例子是：“近几年，网络贷诈骗案件事故，发生在大学生群体中的比例比较高。去年全国XX所高校中有X%发生了校园贷案件，受害学生达XX人。”随后点评：“几个数字往这儿一放，论据充分，论点成立，能说明问题，又显得材料不枯燥。”也就是说，数字能支撑论点、说明问题，同时避免材料枯燥。\n\n**3. 与“典型事例”并列，共同服务于突出主题**\n这一条是紧接“首先，要善于选择最能反映主题的典型事例”之后提出的。资料指出，典型事例具有代表性、客观性和说服力，能反映事物的本质、特点和发展趋势，用好了能“以一当十”，起到突出和深化主题的效果。统计数字与典型事例同属“选好材料”的要求，目的都是印证和突出主题。\n\n**注意**：资料强调的是“最能印证主题”的统计数字，即数字要服务于主题，而不是随意堆砌；但文档中没有进一步说明“不印证主题的数字会有什么后果”，这一点文档中没有提到。\n\n依据：第42页、第40页、第41页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        8,
+        20,
+        24,
+        40,
+        41,
+        42,
+        47
+      ],
+      "cited_pages": [
+        40,
+        41,
+        42
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 5.02,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"选择能印证主题的统计数字\"}",
+          "ok": true,
+          "pages": [
+            20,
+            40,
+            41,
+            42,
+            47
+          ],
+          "count": 5,
+          "best_score": 15.5808,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"统计数字 主题 论证 说服力\"}",
+          "ok": true,
+          "pages": [
+            8,
+            24,
+            41,
+            42,
+            47
+          ],
+          "count": 5,
+          "best_score": 8.3686,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 42}",
+          "ok": true,
+          "pages": [
+            42
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 28,
+      "question": "调查报告的“新”指的是什么?",
+      "expected_page": 44,
+      "answer": "调查报告的“新”，是课程中提出的调查报告四大特点（“新、实、深、精”）中的第一条，具体含义是：\n\n**1. 基本定义**\n“新，就是主题有新意、题材要新颖、观点有创新。”\n\n**2. 为什么要求“新”**\n调查研究的目的，就在于探索未知的东西，开拓新的认识领域，达成主观世界与客观世界新的统一。因此调查报告一定要在“新”字上下功夫。\n\n**3. 具体表现**\n- 有新材料、新见解、新办法；\n- 给人以新的信息、新的启发、新的路数；\n- 让人看了有一种耳目一新的感觉，把思想认识向前推进一步，引领到一个新的境界。\n\n**4. 反面要求**\n如果一篇调查报告从观点到事例都是一些陈辞滥调，那就失去了其本来意义，发挥不了应有的作用。\n\n补充：在调查报告类型中，“研究探索型调查报告”也强调反映现实社会中的新人、新事、新发明、新创造、新做法、新经验（第39页）；在年度工作类调查报告中，则要求把“新情况、新变化、新特点、新要求”搞清楚（第31页）。\n\n依据：第44页、第39页、第31页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        7,
+        12,
+        23,
+        24,
+        31,
+        35,
+        39,
+        43,
+        44,
+        45,
+        48
+      ],
+      "cited_pages": [
+        31,
+        39,
+        44
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 4.26,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 新 指什么\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            7,
+            12,
+            23,
+            24,
+            31,
+            35,
+            39,
+            44
+          ],
+          "count": 8,
+          "best_score": 6.7561,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 新意 新材料 新观点 新问题\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            23,
+            24,
+            31,
+            39,
+            43,
+            44,
+            45,
+            48
+          ],
+          "count": 8,
+          "best_score": 21.0885,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 44, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            44
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 29,
+      "question": "调查报告的“实”具体指哪三个方面?",
+      "expected_page": 45,
+      "answer": "调查报告的“实”具体指以下三个方面：\n\n1. **情况要真实**：坚持用事实说话，靠数据立论。对材料涉及的人、事、物，前因、后果、过程、情节以及时间、地点、各种数据等，都要反复核实，力求准确可靠；在占有大量翔实材料的基础上提出问题、分析问题、得出科学正确的结论。好的调查报告应能经得起实践的检验、群众的检验、历史的检验。\n2. **内容要实在**：不能空泛地议论一通、缺乏事实依据，否则可能得出不全面、不正确甚至错误的结论；写入报告的内容既不能为“增色”而任意夸大，也不能为遮丑而有意缩小，要一是一、二是二。\n3. **文字要朴实**。\n\n依据：第45页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        7,
+        11,
+        20,
+        23,
+        30,
+        31,
+        32,
+        35,
+        45,
+        51
+      ],
+      "cited_pages": [
+        45
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 3.54,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告 实 三个方面\"}",
+          "ok": true,
+          "pages": [
+            11,
+            20,
+            30,
+            32,
+            35
+          ],
+          "count": 5,
+          "best_score": 4.4034,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"调查报告写作要求 真实 实在\"}",
+          "ok": true,
+          "pages": [
+            7,
+            23,
+            31,
+            45,
+            51
+          ],
+          "count": 5,
+          "best_score": 7.3766,
+          "error": null,
+          "duration_ms": 0.1
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 45}",
+          "ok": true,
+          "pages": [
+            45
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 30,
+      "question": "《实践论》里“去粗取精、去伪存真”是用来说明什么的?",
+      "expected_page": 48,
+      "answer": "根据课程资料（第48页“大兴调查研究之风”一节），《实践论》中“去粗取精、去伪存真”与“由此及彼、由表及里”连用，用来说明**感性认识向理性认识的飞跃，即对感觉材料进行“改造制作”的思考过程**。具体包括两层：\n\n1. **在《实践论》原文语境中**：要完全地反映整个事物、反映事物的本质和内部规律性，就必须经过思考作用，把丰富的感觉材料加以“去粗取精、去伪存真、由此及彼、由表及里”的改造制作，造成概念和理论的系统，也就是必须从感性认识跃进到理性认识。这样改造过的认识并不更空虚、更不可靠；相反，只要它是在认识过程中根据实践基础科学地改造过的，就如列宁所说，是更深刻、更正确、更完全地反映客观事物的东西。\n\n2. **在课程中的引申用法**：调查报告的产生过程就应当是一个“去粗取精、去伪存真、由此及彼、由表及里的改造制作”过程；调查报告所表述的观点和见解，以及提出的意见、建议、对策和办法，应当是“科学地改造过的”“更深刻、更正确、更完整地反映客观事物”的“理性认识”。\n\n依据：第48页",
+      "tool_calls": 3,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": true,
+      "accessed_pages": [
+        6,
+        48
+      ],
+      "cited_pages": [
+        48
+      ],
+      "unverified_pages": [],
+      "refused": false,
+      "retrieval_hit": true,
+      "citation_hit": true,
+      "citation_valid": true,
+      "answered_well": true,
+      "success": true,
+      "elapsed_s": 4.5,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"去粗取精 去伪存真\"}",
+          "ok": true,
+          "pages": [
+            48
+          ],
+          "count": 1,
+          "best_score": 7.5234,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"实践论 感性认识 理性认识 改造制作\"}",
+          "ok": true,
+          "pages": [
+            6,
+            48
+          ],
+          "count": 3,
+          "best_score": 18.0063,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 2,
+          "tool": "read_page",
+          "arguments": "{\"page_no\": 48, \"max_chars\": 3000}",
+          "ok": true,
+          "pages": [
+            48
+          ],
+          "count": null,
+          "best_score": null,
+          "error": null,
+          "duration_ms": 0.0
+        }
+      ]
+    },
+    {
+      "position": 31,
+      "question": "Python 的 GIL 是什么?",
+      "expected_page": null,
+      "answer": "文档中没有提到。\n\n我检索了“Python GIL 全局解释器锁”“GIL 多线程 并发 解释器”“Python 编程 语言 线程 锁”“Python 解释器 执行 机制”等关键词，返回的内容都是关于调查研究方法、调查报告写作的材料，例如“没有调查就没有发言权”“大兴调查研究之风”等，没有出现任何与 Python、GIL 或编程相关的内容。因此，本课程资料中无法回答这个问题。\n\n依据：第13、16、18、40、46页（这些页面均无相关内容）",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        13,
+        16,
+        18,
+        40,
+        46
+      ],
+      "cited_pages": [],
+      "unverified_pages": [],
+      "refused": true,
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "citation_valid": null,
+      "answered_well": null,
+      "success": true,
+      "elapsed_s": 2.89,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"Python GIL 全局解释器锁\"}",
+          "ok": true,
+          "pages": [
+            13,
+            16
+          ],
+          "count": 2,
+          "best_score": 3.0155,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"GIL 多线程 并发 解释器\"}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"Python 编程 语言 线程 锁\"}",
+          "ok": true,
+          "pages": [
+            18,
+            40,
+            46
+          ],
+          "count": 3,
+          "best_score": 3.9632,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"Python 解释器 执行 机制\"}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 32,
+      "question": "量子纠缠的原理是什么?",
+      "expected_page": null,
+      "answer": "文档中没有提到“量子纠缠”的相关内容。\n\n我检索了“量子纠缠 原理”“entanglement 纠缠态 定义”“量子 物理 叠加态 测量”“量子纠缠 贝尔不等式 非定域性”等关键词，均未在课程资料中找到关于量子纠缠的原文；唯一命中的片段（第7、10页）实际是“调查报告”的定义，与量子物理无关。因此无法依据课程资料回答该问题，也不作推测。\n\n依据：文档中没有提到（检索无相关页面）",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        7,
+        10
+      ],
+      "cited_pages": [],
+      "unverified_pages": [],
+      "refused": true,
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "citation_valid": null,
+      "answered_well": null,
+      "success": true,
+      "elapsed_s": 4.11,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"量子纠缠 原理\"}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.6
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"entanglement 纠缠态 定义\"}",
+          "ok": true,
+          "pages": [
+            7,
+            10
+          ],
+          "count": 2,
+          "best_score": 2.8736,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"量子 物理 叠加态 测量\"}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"量子纠缠 贝尔不等式 非定域性\"}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.2
+        }
+      ]
+    },
+    {
+      "position": 33,
+      "question": "如何申请国家奖学金?",
+      "expected_page": null,
+      "answer": "**文档中没有提到。**\n\n我检索了“国家奖学金 申请”“奖学金 评审 条件 流程”“奖助学金 资助 学生事务”“scholarship application”等关键词，课程资料中没有任何关于国家奖学金申请条件、材料或流程的内容。仅有的两处命中（第27页、第42页）分别讲的是调查报告的结束语写法和统计数字的运用，与奖学金无关。\n\n如果你需要，我可以帮你检索课程资料中其他主题（如调查报告写作、校园贷等）的内容。\n\n依据：无（文档中未涉及该主题）",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        27,
+        42
+      ],
+      "cited_pages": [
+        27,
+        42
+      ],
+      "unverified_pages": [],
+      "refused": true,
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "citation_valid": null,
+      "answered_well": null,
+      "success": true,
+      "elapsed_s": 3.42,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"国家奖学金 申请\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"奖学金 评审 条件 流程\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.4
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"奖助学金 资助 学生事务\", \"top_k\": 10}",
+          "ok": true,
+          "pages": [
+            27,
+            42
+          ],
+          "count": 2,
+          "best_score": 3.7405,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"scholarship application\", \"top_k\": 10}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.1
+        }
+      ]
+    },
+    {
+      "position": 34,
+      "question": "微积分基本定理的证明过程是什么?",
+      "expected_page": null,
+      "answer": "文档中没有提到微积分基本定理的证明过程。\n\n我检索了“微积分基本定理 证明”“变上限积分 导数 牛顿-莱布尼茨公式”“定积分 原函数 定理”“微积分”等关键词，返回的片段全部是关于调查报告写作的内容（如前言、主体、结尾的结构，横式、纵式、综合式结构等），与微积分无关；其中“微积分”一词在文档中完全没有出现。因此，这份课程资料中不包含微积分基本定理的证明。\n\n依据：文档中没有提到（检索命中的第7、20、21、22、25、39页均为调查报告写作内容，与微积分无关）",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        7,
+        20,
+        21,
+        22,
+        25,
+        39
+      ],
+      "cited_pages": [],
+      "unverified_pages": [],
+      "refused": true,
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "citation_valid": null,
+      "answered_well": null,
+      "success": true,
+      "elapsed_s": 4.17,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"微积分基本定理 证明\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            7,
+            20,
+            21,
+            22,
+            25
+          ],
+          "count": 5,
+          "best_score": 2.8473,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"变上限积分 导数 牛顿-莱布尼茨公式\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"定积分 原函数 定理\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [
+            39
+          ],
+          "count": 1,
+          "best_score": 4.7943,
+          "error": null,
+          "duration_ms": 0.3
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"微积分\", \"top_k\": 8}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.1
+        }
+      ]
+    },
+    {
+      "position": 35,
+      "question": "如何用 PyTorch 训练一个 CNN?",
+      "expected_page": null,
+      "answer": "**文档中没有提到。**\n\n我检索了课程 PDF，其中没有关于 PyTorch、CNN（卷积神经网络）、卷积/池化、反向传播或模型训练流程的任何内容。检索到的资料全部是关于“调查报告写作”的课程材料（如调查研究方法、调查报告结构、专题型调查报告等），与你的问题无关。\n\n因此，我无法依据课程资料回答“如何用 PyTorch 训练一个 CNN”。\n\n依据：第6、13、20、32、51页（这些页面均为调查报告写作相关内容，未涉及 PyTorch 或 CNN）",
+      "tool_calls": 4,
+      "steps": 3,
+      "used_search_docs": true,
+      "used_read_page": false,
+      "accessed_pages": [
+        6,
+        13,
+        20,
+        32,
+        51
+      ],
+      "cited_pages": [],
+      "unverified_pages": [],
+      "refused": true,
+      "retrieval_hit": null,
+      "citation_hit": null,
+      "citation_valid": null,
+      "answered_well": null,
+      "success": true,
+      "elapsed_s": 3.76,
+      "trace": [
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"PyTorch 训练 CNN 卷积神经网络\"}",
+          "ok": true,
+          "pages": [
+            51
+          ],
+          "count": 1,
+          "best_score": 4.4949,
+          "error": null,
+          "duration_ms": 0.2
+        },
+        {
+          "step": 1,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"卷积神经网络 训练流程 代码实现\"}",
+          "ok": true,
+          "pages": [
+            51
+          ],
+          "count": 1,
+          "best_score": 4.4949,
+          "error": null,
+          "duration_ms": 0.1
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"深度学习框架 神经网络 模型训练\"}",
+          "ok": true,
+          "pages": [
+            6,
+            13,
+            20,
+            32,
+            51
+          ],
+          "count": 5,
+          "best_score": 7.4972,
+          "error": null,
+          "duration_ms": 0.5
+        },
+        {
+          "step": 2,
+          "tool": "search_docs",
+          "arguments": "{\"query\": \"CNN 卷积 池化 反向传播 梯度下降\"}",
+          "ok": true,
+          "pages": [],
+          "count": 0,
+          "best_score": 0.0,
+          "error": null,
+          "duration_ms": 0.3
+        }
+      ]
+    }
+  ],
+  "rescored_at": "2026-11-01T07:06:39.696148+00:00",
+  "rescoring_note": "只修正拒答判定为检查回答开头；使用原始 35 题模型输出重新计算，未重复调用 API。"
+}
