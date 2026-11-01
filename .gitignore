@@ -3,3 +3,6 @@
 .idea/
 __pycache__/
 config.py
+data/
+db/
+results*.csv
