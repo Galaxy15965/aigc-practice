@@ -32,6 +32,6 @@
 
   <rect x="40" y="324" width="920" height="72" rx="10" fill="#faf8f4" stroke="#dfd5c5" stroke-width="1"/>
   <text x="57" y="348" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="700" fill="#805b29">怎么读这张图</text>
-  <text x="57" y="369" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11.5" fill="#676d71">旧版的 6 个错误都落在期望页的相邻页；逐页切块后，这些偏移消失。新版检索指标来自离线评测；另已完成 3 题真实 API 冒烟：2/2 可答题命中、1/1 无答案题拒答。</text>
+  <text x="57" y="369" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11.5" fill="#676d71">旧版的 6 个错误都落在期望页的相邻页；逐页切块后偏移消失。新版另完成 10 题真实 API 分层抽样：8/8 可答、2/2 拒答。</text>
   <text x="57" y="386" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11.5" fill="#676d71">两组版本同时改变了分块与查询策略，不能把 +20pp 全部归因于单一变量；下一阶段扩到 35 题全量生成评测。</text>
 </svg>
